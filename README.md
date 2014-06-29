@@ -1,5 +1,7 @@
 # Helpscout Django
 
+[![Build Status](https://travis-ci.org/carousell/Helpscout-Django.svg?branch=master)](https://travis-ci.org/carousell/Helpscout-Django)
+
 Do you use [Help Scout](https://www.helpscout.net/) for handling customer
 queries and Django for your website or backend?
 
