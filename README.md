@@ -7,7 +7,7 @@ Do you use [Help Scout](https://www.helpscout.net/) for handling customer
 queries and Django for your website or backend?
 
 Helpscout Django is a Flask template which allows you setup custom app integration on Help Scout
-to display information on your users database on Django. An example of such integration can be
+to display information on Django's users database. An example of such integration can be
 seen in this screenshot:
 
 ![Screenshot of Help Scout custom app](helpscout_customapp.png)
