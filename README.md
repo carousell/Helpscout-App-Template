@@ -1,6 +1,6 @@
 # Helpscout App Template
 
-[![Build Status](https://travis-ci.org/carousell/Helpscout-Django.svg?branch=master)](https://travis-ci.org/carousell/Helpscout-App-Template)
+[![Build Status](https://travis-ci.org/carousell/Helpscout-App-Template.svg?branch=master)](https://travis-ci.org/carousell/Helpscout-App-Template)
 
 Do you use [Help Scout](https://www.helpscout.net/) for handling customer queries?
 
