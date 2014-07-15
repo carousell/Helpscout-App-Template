@@ -1,13 +1,11 @@
-# Helpscout Django
+# Helpscout App Template
 
-[![Build Status](https://travis-ci.org/carousell/Helpscout-Django.svg?branch=master)](https://travis-ci.org/carousell/Helpscout-Django)
-[![Coverage Status](https://img.shields.io/coveralls/carousell/Helpscout-Django.svg)](https://coveralls.io/r/carousell/Helpscout-Django)
+[![Build Status](https://travis-ci.org/carousell/Helpscout-Django.svg?branch=master)](https://travis-ci.org/carousell/Helpscout-App-Template)
 
-Do you use [Help Scout](https://www.helpscout.net/) for handling customer
-queries and Django for your website or backend?
+Do you use [Help Scout](https://www.helpscout.net/) for handling customer queries?
 
-Helpscout Django is a Flask template which allows you setup custom app integration on Help Scout
-to display information on Django's users database. An example of such integration can be
+This project contains a Flask template which allows you setup custom app integration on Help Scout
+to display information from your user database. An example of such integration can be
 seen in this screenshot:
 
 ![Screenshot of Help Scout custom app](helpscout_customapp.png)
@@ -43,7 +41,7 @@ editing the configuration file:
 Notable configurations:
 
 - `HELPSCOUT_SECRET`: This is the secret key you have set when creating a Help Scout custom app.
-- `DB_HOST`, `DB_NAME`, ...: Database connection parameters to your Django PostgreSQL database.
+- `DB_HOST`, `DB_NAME`, ...: Database connection parameters to your PostgreSQL database.
 
 By default, Help Scout will force a HTTPS connection to your predefined callback URL when
 setting up the custom app. For debugging purpose, you can enable Debug mode for your

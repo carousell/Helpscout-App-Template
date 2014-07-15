@@ -2,7 +2,7 @@ import hmac
 import hashlib
 import base64
 from unittest import TestCase
-from helpscout_django.helpscout import is_helpscout_request
+from helpscout_app.helpscout import is_helpscout_request
 
 
 class HelpScoutTest(TestCase):

@@ -1,17 +1,17 @@
 from unittest import TestCase
 from mock import patch, Mock
-from helpscout_django.decorators import signed_request
+from helpscout_app.decorators import signed_request
 
 
 class DecoratorTest(TestCase):
     def test_signed_request(self):
         # Patch Flask's request, current_app and the is_helpscout_request helper function
-        request_patcher = patch('helpscout_django.decorators.request',
+        request_patcher = patch('helpscout_app.decorators.request',
                                 headers={'X-Helpscout-Signature': '123'})
         MockRequest = request_patcher.start()
-        app_patcher = patch('helpscout_django.decorators.current_app', config={})
+        app_patcher = patch('helpscout_app.decorators.current_app', config={})
         MockApp = app_patcher.start()
-        helpscout_patcher = patch('helpscout_django.decorators.is_helpscout_request')
+        helpscout_patcher = patch('helpscout_app.decorators.is_helpscout_request')
         MockHelpScout = helpscout_patcher.start()
 
         # If helper function returns False, decorator should not call the callable

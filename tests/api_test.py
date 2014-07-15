@@ -3,7 +3,7 @@ import mock
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 from flask.ext.testing import TestCase
-from helpscout_django import create_app as createapp
+from helpscout_app import create_app as createapp
 
 
 class APITest(TestCase):
@@ -34,7 +34,7 @@ class APITest(TestCase):
         conn.close()
 
     def test_something(self):
-        with mock.patch('helpscout_django.decorators.is_helpscout_request') as MockClass:
+        with mock.patch('helpscout_app.decorators.is_helpscout_request') as MockClass:
             instance = MockClass.return_value
             instance.method.return_value = True
 
