@@ -1,6 +1,6 @@
 from functools import wraps
 from flask import request, current_app
-from helpscout import is_helpscout_request
+from .helpscout import is_helpscout_request
 
 
 def signed_request(f):

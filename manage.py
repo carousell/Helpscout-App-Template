@@ -1,5 +1,5 @@
 from flask.ext.script import Manager
-from helpscout_django import create_app
+from helpscout_app import create_app
 
 
 manager = Manager(create_app())
